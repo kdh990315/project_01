@@ -44,35 +44,37 @@
         <nav class="top">
             <ul>
                 <li><a href="#">메뉴</a>
-                <ul>
-                    <li><a href="#">식빵</a></li>
-                    <li><a href="#">마카롱</a></li>
-                    <li><a href="#">바게트</a></li>
-                    <li><a href="#">케이크</a></li>
-                    <li><a href="#">크로아상</a></li>
-                    <li><a href="#">팡도르</a></li>
-                    <li><a href="#">기타</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">식빵</a></li>
+                        <li><a href="#">마카롱</a></li>
+                        <li><a href="#">바게트</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">크로아상</a></li>
+                        <li><a href="#">팡도르</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="">주문</a>
-                <ul>
-                    <li>예약주문</li>
-                    <li>전국배송</li>
-                </ul>
+                    <ul>
+                        <li>예약주문</li>
+                        <li>전국배송</li>
+                    </ul>
                 </li>
                 <li><a href="">공지</a>
-                <ul>
-                    <li> <a href="#">휴무일</a> </li>
-                    <li> <a href="#">공지사항</a> </li>
-                    <li> <a href="#">매장위치</a> </li>
-                </ul>
+                    <ul>
+                        <li> <a href="#">휴무일</a> </li>
+                        <li> <a href="#">공지사항</a> </li>
+                        <li> <a href="#">매장위치</a> </li>
+                    </ul>
                 </li>
 
                 <li><a href="#slider4">event</a>
                 </li>
 
                 <li><a href="">창업문의</a></li>
+
+                <li><a href="">1:1 문의</a></li>
             </ul>
         </nav>
 
@@ -88,11 +90,11 @@
 
         <form>
             <div class="search_box">
-                <span>검색 :</span>
                 <input type="text" class="search" placeholder="검색어를 입력해주세요">
                 <input type="image" class="search1" alt="검색" src="img/search.png">
             </div>
         </form>
+    </header>
     </header>
 
     <div id="slider" style="background-image: url(img/accompaniement.jpg);" alt="">
@@ -100,8 +102,8 @@
     </div>
 
     <div id="icon">
-            <div class="icon_box">
-                    <a href="#"><img class="img1" src="img/eco.png" alt="image1"></a>
+            <!-- <div class="icon_box">
+                    <a href="#"><img class="img1" src="img/fresh_icon.png" alt="image1"></a>
                     <h3>FRESH</h3>
                     <p>신선한 유기농 재료</p>
             </div>
@@ -128,7 +130,7 @@
                     <h3>GIFT POINT</h3>
                     <p>포인트를 현금처럼 사용</p>
                 </div>
-            </div>
+            </div> -->
     </div>
 
     <div id="slider2" style="background-image: url('img/image3.jpg');">
@@ -238,10 +240,30 @@
         </div>
         
         <div class="button_box">
-            <button></button>
-            <button></button>
-            <button></button>
+            <button id="btn1"></button>
+            <button id="btn2"></button>
+            <button id="btn3"></button>
         </div>
+
+        <script>
+            document.getElementById('btn1').onclick = function() {
+                document.getElementById('btn1').style.opacity = 0.5;
+                document.getElementById('btn2').style.opacity = 1;
+                document.getElementById('btn3').style.opacity = 1;
+            }
+
+            document.getElementById('btn2').onclick = function() {
+                document.getElementById('btn1').style.opacity = 1;
+                document.getElementById('btn2').style.opacity = 0.5;
+                document.getElementById('btn3').style.opacity = 1;
+            }
+
+            document.getElementById('btn3').onclick = function() {
+                document.getElementById('btn1').style.opacity = 1;
+                document.getElementById('btn2').style.opacity = 1;
+                document.getElementById('btn3').style.opacity = 0.5;
+            }
+        </script>
 
     </div>
 
