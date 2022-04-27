@@ -12,19 +12,19 @@
 <body>
     <header>
         <div id="logo">
-            <img src="img/logo100.png" alt="logo">
+            <a href="index.html"><img src="img/logo100.png" alt="logo"></a>
         </div>
         <nav class="top">
             <ul>
                 <li><a href="#">메뉴</a>
                     <ul>
-                        <li><a href="#">식빵</a></li>
-                        <li><a href="#">마카롱</a></li>
-                        <li><a href="#">바게트</a></li>
-                        <li><a href="#">케이크</a></li>
-                        <li><a href="#">크로아상</a></li>
-                        <li><a href="#">팡도르</a></li>
-                        <li><a href="#">기타</a></li>
+                        <li><a href="index.html">식빵</a></li>
+                        <li><a href="index.html">마카롱</a></li>
+                        <li><a href="index.html">바게트</a></li>
+                        <li><a href="index.html">케이크</a></li>
+                        <li><a href="index.html">크로아상</a></li>
+                        <li><a href="index.html">팡도르</a></li>
+                        <li><a href="index.html">기타</a></li>
                     </ul>
                 </li>
 
@@ -36,28 +36,28 @@
                 </li>
                 <li><a href="">공지</a>
                     <ul>
-                        <li> <a href="#">휴무일</a> </li>
-                        <li> <a href="#">공지사항</a> </li>
-                        <li> <a href="#">매장위치</a> </li>
+                        <li> <a href="index.html">휴무일</a> </li>
+                        <li> <a href="index.html">공지사항</a> </li>
+                        <li> <a href="index.html">매장위치</a> </li>
                     </ul>
                 </li>
 
                 <li><a href="#slider4">event</a>
                 </li>
 
-                <li><a href="">창업문의</a></li>
+                <li><a href="index.html">창업문의</a></li>
 
-                <li><a href="">1:1 문의</a></li>
+                <li><a href="index.html">1:1 문의</a></li>
             </ul>
         </nav>
 
         <nav class="top1">
             <ul>
-                <li><a href="">로그인</a></li>
+                <li><a href="index.html">로그인</a></li>
                 <li>|</li>
-                <li><a href="">회원가입</a></li>
+                <li><a href="index.html">회원가입</a></li>
                 <li>|</li>
-                <li><a href="">마이페이지</a></li>
+                <li><a href="index.html">마이페이지</a></li>
             </ul>
         </nav>
 
@@ -116,14 +116,46 @@
         </div>
 
         <div class="cart_total">
-            <p class="price">
-                <span class="price1">총 상품금액 :</span>
-                <strong class="price2">10,000</strong>
-                <span class="price3">원</span>
-            </p>
-            <p class="point">
-                <p class="point2">15%</p><p class="point1">제휴할인카드 사용시 할인과 적립 혜택을 받으실 수 있습니다.</p>
-            </p>
+            <form action="" name="form" method="get">
+                <div class="cart_price_box1">
+                    <input class="btn1" type="button" value="-" onclick="del()">
+                    <input class="text1" type="text" name="amount" value="1" size="3" onchange="change()">
+                    <input class="btn2" type="button" value="+" onclick="add()">
+                </div>
+                <div class="cart_price_box2">
+                    <span class="total_price">총 상품금액 : </span>
+                    <input class="total_text" type="text" name="sum" readonly>
+                    <span class="total_won">원</span>
+                </div>
+                
+            </form>
+    
+            <script>
+                var sell_price = 10000;
+                var amount = document.form.amount.vlaue;
+                document.form.sum.value = sell_price;
+    
+                function add() {
+                    const hm = document.form.amount;
+                    const sum = document.form.sum;
+                    hm.value++;
+                    sum.value = parseInt(hm.value) * sell_price;
+                }
+    
+                function del() {
+                    hm = document.form.amount;
+                    sum = document.form.sum;
+                    if (hm.value > 1) {
+                        hm.value--;
+                        sum.value = parseInt(hm.value) * sell_price;
+                    }
+                }
+    
+            </script>
+        </div>
+
+        <div id="cart_point_box">
+            <p class="point2">15%</p><p class="point1">제휴할인카드 사용시 할인과 적립 혜택을 받으실 수 있습니다.</p>
         </div>
 
         <div id="cart_footer">
@@ -139,7 +171,7 @@
     <div id="more_product">
         <div class="more_product_box">
             <div class="more_product_img_box">
-                <a href="#"><img src="img/more1.jpg" alt=""></a>
+                <a href="index.html"><img src="img/more1.jpg" alt=""></a>
             </div>
             <div class="more_product_text_box">
                 <p class="more_product_text">버터 크로아상</p>
@@ -149,7 +181,7 @@
 
         <div class="more_product_box">
             <div class="more_product_img_box">
-                <a href="#"><img src="img/more2.jpg" alt=""></a>
+                <a href="index.html"><img src="img/more2.jpg" alt=""></a>
             </div>
             <div class="more_product_text_box">
                 <p class="more_product_text">달달푹신 허니브레드</p>
@@ -159,7 +191,7 @@
 
         <div class="more_product_box">
             <div class="more_product_img_box">
-                <a href="#"><img src="img/more3.jpg" alt=""></a>
+                <a href="index.html"><img src="img/more3.jpg" alt=""></a>
             </div>
             <div class="more_product_text_box">
                 <p class="more_product_text">스윗 시나몬롤</p>
@@ -169,7 +201,7 @@
 
         <div class="more_product_box">
             <div class="more_product_img_box">
-                <a href="#"><img src="img/more4.jpg" alt=""></a>
+                <a href="index.html"><img src="img/more4.jpg" alt=""></a>
             </div>
             <div class="more_product_text_box">
                 <p class="more_product_text">딸기 몽블랑</p>
@@ -179,7 +211,7 @@
 
         <div class="more_product_box">
             <div class="more_product_img_box">
-                <a href="#"><img src="img/more5.jpg" alt=""></a>
+                <a href="index.html"><img src="img/more5.jpg" alt=""></a>
             </div>
             <div class="more_product_text_box">
                 <p class="more_product_text">카카오 티라미수</p>
@@ -191,9 +223,9 @@
     <div id="main_box">
         <div id="main_box_header">
             <a href="#main_box_img"><div class="main_box_header_box">상품설명</div></a>
-            <a href="#"><div class="main_box_header_box">상세정보</div></a>
-            <a href="#review_box"><div class="main_box_header_box">후기</div></a>
-            <a href="#product_infomation_table"><div class="main_box_header_box">문의</div></a>
+            <a href="#main_box_img"><div class="main_box_header_box">상세정보</div></a>
+            <a href="#review_box_text"><div class="main_box_header_box">후기</div></a>
+            <a href="#product_infomation_text_box"><div class="main_box_header_box">문의</div></a>
         </div>
 
         <div id="main_box_img">
@@ -364,7 +396,7 @@
     <footer>
         <div class="box5">
             <div>
-                <a href="#"><img src="img/logo100.png" alt="bottom_logo"></a>
+                <a href="index.html"><img src="img/logo100.png" alt="bottom_logo"></a>
             </div>
             <div>
                 <ul>
@@ -390,10 +422,10 @@
             </div>
             <div>
                 <ul>
-                    <li><a href="#" target="_black"><img src="img/youtube.png" alt=""></a>
-                        <a href="#" target="_black"><img src="img/facebook.png" alt=""></a>
-                        <a href="#" target="_black"><img src="img/blog.png" alt=""></a>
-                        <a href="#" target="_black"><img src="img/instagram.png" alt=""></a>
+                    <li><a href="index.html" target="_black"><img src="img/youtube.png" alt=""></a>
+                        <a href="index.html" target="_black"><img src="img/facebook.png" alt=""></a>
+                        <a href="index.html" target="_black"><img src="img/blog.png" alt=""></a>
+                        <a href="index.html" target="_black"><img src="img/instagram.png" alt=""></a>
                     </li>
 
                 </ul>
