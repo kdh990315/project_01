@@ -118,7 +118,7 @@ td {
 
 #cart_box > .cart_name > .p5 {
     font-size: 14px;
-    color: yellowgreen;
+    color: rgb(107, 29, 29);
     margin-left: 20px;
     margin-top: 10px;
 }
@@ -266,7 +266,7 @@ dd {
     margin-left: 180px;
     margin-top: 1px;
     font-size: 13px;
-    background-color: yellowgreen;
+    background-color: rgb(107, 29, 29);
     color: white;
     border-radius: 5px;
     text-align: center;
@@ -298,7 +298,7 @@ dd {
     height: 56px;
     border: none;
     cursor: pointer;
-    background-color: yellowgreen;
+    background-color: rgb(107, 29, 29);
     border-radius: 5px;
     padding: 18px 0;
 }
@@ -397,7 +397,7 @@ dd {
 
 #main_box > #main_box_header > a > .main_box_header_box:active {
     background-color: #fff;
-    color: yellowgreen;
+    color: rgb(107, 29, 29);
     border-bottom: 0;
 }
 
